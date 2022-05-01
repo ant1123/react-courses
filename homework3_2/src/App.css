@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+  font-family: solomon-sans,sans-serif;
+}
+
+.App-header {
+  background-color: #c4c4c4;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+}
+
+.App-header-logo {
+  float: left;
+  padding-left: 30px;
+  padding-top: 7px;
+}
+
+.App-header-buttons {
+  align-items: right;
+  float: right;
+  display: table;
+  padding-right: 30px;
+}
+
+.App-header-cell {
+  display: table-cell;
+  padding: 0 10px;
+}
+
+.App-header-logo > button,
+.App-header-cell > button {
+  background: none;
+  border: none;
+  margin-top: 55%;
+}
+
+.App-footer {
+  background-color: #c4c4c4;
+  width: 100%;
+  height: 140px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.App-main {
+  position: absolute;
+  top: 80px;
+  padding: 0 35px;
+}
+
+.Main-header {
+  text-align: left;
+  font-weight: 300;
+  padding-left: 5px;
+}
+
+p {
+  justify-content: stretch;
+  text-align: left;
+  width: 70%;
+  font-size: smaller;
+}
+
+.App-footer-links {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
+}
+
+.App-footer-links > div {
+  margin: 5px 0;
+}
+
+.App-footer-links > div > a {
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  padding-left: 30px;
+}
+.App-footer-bottom-line {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
