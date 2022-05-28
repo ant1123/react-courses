@@ -32,8 +32,9 @@ export class Todo extends React.Component {
 
     onItemDone = (id) => {
         const newValue = this.state.list[id];
-        newValue.completed = true;
-        newValue.history.push(updateItemFieldHistory ("completed", false, true));
+        const oldCompleted = newValue.completed;
+        newValue.completed = !newValue.completed;
+        newValue.history.push(updateItemFieldHistory ("completed", oldCompleted, newValue.completed));
         this.setState ({
             list: this.state.list.map(item => item.id === id ? newValue : item),
             selectedItem: newValue,
