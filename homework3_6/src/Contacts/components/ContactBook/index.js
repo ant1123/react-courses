@@ -1,16 +1,8 @@
-import { useReducer, useMemo } from 'react';
+import { useReducer, useMemo, useEffect } from 'react';
 import {Search, ContactList, EditPopup } from '../index';
 
 const initialState = {
-    list: [
-        {id: 1, name: "Andres", surname: "Garsia", number: "+38 (012) 345 67 89"},
-        {id: 2, name: "Anna", surname: "Delvey", number: "+38 (012) 345 67 89"},
-        {id: 3, name: "Anna", surname: "Sorokin", number: "+38 (067) 145 67 76"},
-        {id: 4, name: "Bob", surname: "Garrison", number: "+38 (095) 245 67 23"},
-        {id: 5, name: "Jane", surname: "Doe", number: "+40 (258) 222 67 89"},
-        {id: 6, name: "John", surname: "Doe", number: "+40 (258) 123 67 89"},
-        {id: 7, name: "Robert", surname: "Person", number: "+40 (247) 215 67 89"},
-    ],
+    list: [],
     editableContactId: 0,
     showPopup: false,
     searchValue: '',
@@ -18,6 +10,8 @@ const initialState = {
 
 function reducer(state, action) {
     switch (action.type) {
+      case 'init':
+        return {...state, list: action.list};
       case 'edit':
         return {...state, showPopup: true, editableContactId: action.id};
       case 'delete':
@@ -37,7 +31,16 @@ function reducer(state, action) {
     }
 }
 
-export function ContactBook () {
+export function ContactBook () {    
+useEffect(() => 
+dispatch({type: 'init', list: [{id: 1, name: "Andres", surname: "Garsia", number: "+38 (012) 345 67 89"},
+    {id: 2, name: "Anna", surname: "Delvey", number: "+38 (012) 345 67 89"},
+    {id: 3, name: "Anna", surname: "Sorokin", number: "+38 (067) 145 67 76"},
+    {id: 4, name: "Bob", surname: "Garrison", number: "+38 (095) 245 67 23"},
+    {id: 5, name: "Jane", surname: "Doe", number: "+40 (258) 222 67 89"},
+    {id: 6, name: "John", surname: "Doe", number: "+40 (258) 123 67 89"},
+    {id: 7, name: "Robert", surname: "Person", number: "+40 (247) 215 67 89"}]
+}), []);
     const [state, dispatch] = useReducer(reducer, initialState);
     const filterList = (contact, filter) =>  
         contact.name.includes(filter) ||
