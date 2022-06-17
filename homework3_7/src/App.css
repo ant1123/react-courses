@@ -1,0 +1,505 @@
+.App {
+  text-align: center;
+}
+.contactBookContainer {
+  text-align: center;
+  padding-top: 37px;
+}
+.header {
+  text-align: left;
+}
+.headerTitle {
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29.05px;
+  padding-left: 100px;
+  padding-top: 45px;
+}
+
+.headerAuthor {
+  text-align: left;
+  float: left;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  padding-left: 100px;
+}
+.headerAccount {
+  float: right;
+  text-align: right; 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: underline;
+  color: #000000;
+  padding-right: 100px;
+}
+.contactSearch {
+  width: 480px;
+  height: 30px;
+  border-radius: 15px;
+  background: #E8E8E8;
+  border: 1px solid #000000;
+  padding-left: 10px;
+}
+.contactContainer {
+  display: table;
+  background: #D9D9D9;
+  border-radius: 15px;
+  width: 500px;
+  height: 70px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.roundDiv {
+  margin-left: 2%;
+  background: #F3F2F2;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.contactItem {
+  width:100%;
+  padding-top: 12px;
+  text-align: left;
+  padding-left: 20px;
+}
+.buttonsSection {
+  padding-right: 27px;
+  display: flex;
+}
+.contactList {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 28px;
+}
+.buttonsSection > button {
+  height: 24px;
+  padding-top: 21px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  display: inline-block;
+}
+.buttonsSection > button:last-child {
+  font-size: 20px; 
+}
+.contactName {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+.contactPhone {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  padding-top: 5px;
+}
+.editPopupContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  left:0;
+  bottom: 0;
+  background: rgb(0 0 0 / 38%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.editContactPopup {
+  width: 550px;
+  height: 300px;
+  background: #EFEFEF;
+}
+.editPopupHeader {
+  display: flex;
+  background: #B7B7B7;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.editPopupHeader > h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.editPopupHeader > button {
+  background: none;
+  border: none;
+}
+.editPopupBody {
+  display: flex;
+  padding-top: 23px;
+}
+.roundEditDiv {
+  margin-left: 2%;
+  background: #D9D9D9;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.editContactForm {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.editContactField > input {
+  border-radius: 10px;
+  width: 340px;
+  height: 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.editContactField {
+  display: flex;
+  flex-direction: column;
+}
+.editContactField > label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: left;
+}
+.saveContactBtn {
+  width: 111px;
+  height: 30px;
+  background-color: #519DD3;
+  color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 10px;
+}
+.saveContact {
+  text-align: right;
+}
+
+.App {
+  text-align: center;
+}
+
+.TODO-App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-content: stretch;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+.Left-panel {
+  display: flex;
+  height: 100%;
+  width: 400px;
+  background: #C4C4C4;
+}
+.Right-panel {
+  display: flex;
+  height: 100%;
+  width: calc(100% - 400px);
+  right: 400px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 400px;
+}
+.Right-panel > div {
+  width: 100%;
+}
+.TODO-form {
+  width: 400px;
+}
+.TODO-label-container {
+  width: 100%;
+  border-bottom: 2px solid #9A9A9A;
+}
+.TODO-label {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43.57px;
+  font-family: 'Inter';
+  margin: 15px 20px;
+}
+.TODO-list {
+  width: 100%;
+}
+.Todo-Item-Description-Label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 44px;
+  padding-bottom: 30px;
+}
+.Add-field {
+  width: 316px;
+  height: 63px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+}
+.Add-Todo {
+  height: 67px;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  position: absolute;
+  padding: 5px;
+  display: flex;
+}
+.Todo-Item {
+  width: 370px;
+  height: 60px;
+  background: #DFDFDF;
+  border-radius: 10px;
+  margin: 5px;
+  display: inline-flex;
+}
+.Todo-Button {
+  width: 22px;
+  height: 22px;
+  background: #C4C4C4;
+  color: #C4C4C4;
+  border-radius: 10px;
+  border: 1px solid #C4C4C4;
+  margin: 20px 10px;
+  padding: 0;
+}
+.Todo-Button-Active {
+  background: #6DBE75;
+  color: black;
+}
+.Todo-Item-Details {
+  padding: 20px 40px;
+}
+.Todo-Item-Change-Details {
+  width: 100%; 
+  border-radius: 15px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  height: 154px;
+}
+.History-Div {
+  bottom: 0;
+  right: 40px; 
+  left: 40px;
+  position: absolute;
+  height: 150px;
+  overflow: auto;
+}
+.Todo-Item-Info {
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+.Todo-Item-Selected {
+   background-color: #DAF0E6;
+}
+.Todo-Item-Title {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 22px;
+}
+.Todo-Item-Description {
+  display: inline-block;
+  width: 100%;
+  font-size: 12px;
+  line-height: 15px;
+}
+.Add-button {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: white;
+  background-color: #6DBE75;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  margin: 12px 7px;
+  border-radius: 4px;
+  padding-left: 14px;
+  border: none;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.Todo-Items-Done {
+  text-decoration: line-through;
+}
+.App-link {
+  color: #61dafb;
+}
+.History-Message {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  padding: 5px;
+}
+.History-Message > div {
+  display: inline-flex;
+}
+.History-Label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 10px
+}
+.Nothing-Label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 44px;
+  color: #BBBBBB;
+  margin: auto;
+  margin-top: 15%;
+  text-align: center;
+  width: 100%;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #C4C4C4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: red;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.homePage {
+  background-color: #C4C4C4;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.App-img {
+  min-width: 50px;
+  min-height: 100px;
+  width: 95%;
+  height: 95%;
+}
+.routsContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-content: stretch;
+}
+.routsCard {
+  height: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.cardImg {
+  background: none;
+  min-width: 50px;
+  min-height: 100px;
+  height: 60%;
+  box-shadow: 1px 2px 4px 1px #6f5b1a4d, -0.4em 0 0.1em #68636312;
+}
+.routsDescription {
+  font-size: 11px;
+  max-width: 170px;
+  text-align: left;
+  padding: 10px 0;
+}
+.navElement {
+  text-align: left;
+  padding: 5px 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.homePageLabel {
+  color: #606054b8;
+  border-bottom: 2px solid #6060561f;
+  margin-top: 3px;
+}
+.Home {
+  position: fixed;
+  top: 15px;
+  right: 30px;
+  font-size: 50px;
+}
