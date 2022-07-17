@@ -1,0 +1,190 @@
+html {
+  background: url('background.png') no-repeat;
+  background-size: 100%;
+}
+
+.school {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.coursesPage {
+  width: 400px;
+}
+.lgroupPage {
+  background: #D9D9D9;
+  width: 100%; 
+  margin-left: 20px;
+  max-width: 3500px;
+  min-width: 500px;
+  min-height: 400px;
+  overflow-y: auto;
+}
+.coursesDiv {
+  width: 100%;
+  background: #D9D9D9;
+}
+.coursesPageDiv {
+  width: 100%;
+  height: 100%;
+  background: #D9D9D9;
+}
+.lgroupDiv {
+  width: 100%; 
+}
+.dashboardDiv {
+  width: 90px;
+  background: #D9D9D9;
+  height: 100%;
+  margin-top: 20px;
+}
+.dashboard {
+  width: 90px;
+  height: 100%;
+}
+.content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #cdcdcdbf;
+}
+.schoolPart {
+  position: fixed;
+  top: 160px;
+  bottom: 0;
+  right: 0;
+  left: 130px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+}
+.schoolInfo {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+.schoolPage {
+  width: 100%;
+}
+.schoolDiv {
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  z-index: 2;
+}
+.schoolShortItem {
+  width: 50px;
+  height: 38px;
+  background: #969696;
+  margin: 5px 20px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 700;
+  padding-top: 16px;
+}
+.schoolShortItem.selected {
+  background: #5A5A5A;
+}
+.schooInfoItem {
+  display: flex;
+  justify-content: space-between;
+}
+.schooInfoItem {
+  display: flex;
+  justify-content: space-between;
+}
+.schoolFirstSpan {
+  margin-top: 40px;
+}
+.courseItem {
+  height: 40px;
+  width: 380px;
+  background: #969696;
+  margin: 6px 0;
+  font-weight: 700;
+  font-size: 12px;
+  color: #FFFFFF;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.courseItem.selected{
+  background: #5A5A5A;
+}
+.groupItem {
+  background: #969696;
+  margin-bottom: 10px;
+}
+.groupsLabel {
+  font-weight: 700;
+  font-size: 16px;
+  color: #6b6b6b;
+  margin: 20px 10px;
+}
+.learningGroupLabel {
+  color: #FFFFFF;
+  padding: 20px 10px;
+  font-weight: 700;
+  font-size: 12px;
+}
+.groupInfoText {
+  color: #000000;
+  font-weight: 400;
+  font-size: 32px;
+}
+.groupInfoLabel {
+  color: #000000;
+  font-weight: 400;
+  font-size: 12px;
+}
+.lessonsRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.groupInfoRow {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.groupInfoRow > div {
+  width: 205px;
+  height: 80px;
+  background: #D9D9D9;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.lesson {
+  width: 20px;
+  height: 20px;
+  background: #D9D9D9;
+}
+.lesson.passed {
+  background: #5A5A5A;
+}
+.lessonsContainer {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+.courseLabelDiv {
+  font-weight: 700;
+  font-size: 16px;
+  color: #6b6b6b;
+  padding: 20px 10px;
+}
+.schoolContent {
+  width: 100%;
+  min-height: 400px;
+  overflow-y: auto;
+  display: flex;
+  align-content: stretch;
+  justify-content: left;
+  height: 100%;
+  min-height: 400px;
+  overflow-y: auto;
+}
