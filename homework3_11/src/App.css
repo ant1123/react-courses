@@ -51,7 +51,7 @@
 }
 .inputForm label,
 .inputForm input {
-  font-size: 16px;
+  font-size: 15px;
   color: white;
 }
 .shapeItemList {
@@ -59,7 +59,7 @@
   align-content: space-between;
   justify-content: space-between;
   margin: 7px 20px;
-  font-size: 16px;
+  font-size: 15px;
   border-bottom: 1px solid white;
   padding-bottom: 5px;
 }
@@ -87,7 +87,7 @@
 }
 .viewerItemTag,
 .viewerItem {
-  font-size: 24px;
+  font-size: 22px;
   font-weight:400;
   font-family: Courier, monospace;
 }

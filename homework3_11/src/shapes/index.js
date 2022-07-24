@@ -1,6 +1,5 @@
 import { useReducer } from 'react';
 import {Viewer, ComponentList, InputForm} from './components';
-import {v4 as uuid} from "uuid";
 import {initialState} from './components/utils/initialInputValues';
 
 function reducer(state, action) {
@@ -33,7 +32,7 @@ export function Shapes () {
             /> 
             <Viewer 
                 item={state.list.find(item => item.id === state.selectedItem)} 
-                onItemAdd={() => dispatch({type: 'edit', id: uuid()})}
+                onItemAdd={() => dispatch({type: 'edit', id: -1})}
             />
             <ComponentList 
                 list={state.list}

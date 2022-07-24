@@ -17,12 +17,12 @@ import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormHelperText from '@mui/material/FormHelperText';
 import {v4 as uuid} from "uuid";
+import {useEffect} from 'react';
 
 const theme = createTheme(palette);
 const validationSchema = yup.object().shape(validator);
-const getItem = (props) => !!(props.selectedItem && props.list) ? 
-  props.list.find(item => item.id === props.selectedItem) || 
-  {...initialValues, id: props.selectedItem } : initialValues;
+const getItem = (props) => !!(props.selectedItem && props.list && props.selectedItem !== -1) ? 
+  props.list.find(item => item.id === props.selectedItem) : null;
 
 export function InputForm(props) {
   const item = getItem(props);
@@ -33,9 +33,14 @@ export function InputForm(props) {
   });
   const handleSelectChange = (event) => handleChange("type")(event);
   const {values, handleSubmit, handleChange, handleBlur, errors} = formik;
-  if (item && item.id !== formik.values.id) {
-    formik.setValues(item);
-  }
+
+  useEffect(() => {
+    if (item && item.id !== formik.values.id) {
+      formik.setValues(item);
+    } else if (!item) {
+      formik.resetForm(initialValues);
+    }
+  }, [props.list, item, props.selectedItem]);
   return (
     <div className="inputForm">
       <ThemeProvider theme={theme}>
