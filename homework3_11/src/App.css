@@ -1,0 +1,101 @@
+.App {
+  text-align: left;
+}
+.inputForm,
+.shapesMain,
+.shapeItemContainer {
+  bottom: 0;
+  top: 0;
+  position: fixed;
+  color: white;
+}
+
+.inputForm {
+  width:320px;
+  background: #7B809D;
+  left: 0;
+  overflow-y: auto;
+}
+.shapeItemContainer {
+  width:300px;
+  background: #7B809D;
+  right: 0;
+}
+.viewerContainer {
+  width: 100%;
+  height: 100%;
+  background: #494C5E;
+}
+.shapesMain {
+  left: 300px;
+  right: 300px;
+}
+.addButton {
+  position: fixed;
+  bottom: 30px;
+  right: 330px;
+}
+.addButton > button {
+  background: #7B809D;
+  font-size: 48px;
+  width: 60px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+}
+.listTitle {
+  font-size: 24px;
+  margin: 20px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid white;
+}
+.inputForm label,
+.inputForm input {
+  font-size: 16px;
+  color: white;
+}
+.shapeItemList {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  margin: 7px 20px;
+  font-size: 16px;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+.shapeItem {
+  padding-left: 5px;
+}
+.shapeItem.selected {
+  font-weight: 500;
+  text-shadow: 1px 1px #000000c9;
+}
+.deleteButton {
+  padding-right: 5px;
+  background: none;
+  margin: none;
+  border: none;
+  color: white;
+}
+.shapesDescription {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.viewerItemTag,
+.viewerItem {
+  font-size: 24px;
+  font-weight:400;
+  font-family: Courier, monospace;
+}
+.viewerItem {
+  padding-left: 25px;
+  white-space: nowrap;
+}
+.form {
+  min-height: 530px;
+  overflow-y: auto;
+}

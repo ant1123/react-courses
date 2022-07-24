@@ -2,11 +2,11 @@ import {fromFlatToTree} from "../functions/from-flat-to-tree";
 import {NFS_MW_CITY_DISTRICTS, NFS_MW_CITY_DISTRICTS_TREE} from "./mock-data.js";
 
 describe("from flat to tree", () => {
-  it('should return object that represents correct relation between instances of cities', () => {
+  it('should return tree object that represents correct relation between instances of cities', () => {
     expect(fromFlatToTree(NFS_MW_CITY_DISTRICTS, NFS_MW_CITY_DISTRICTS[0])).toEqual(NFS_MW_CITY_DISTRICTS_TREE);
   });
 
-  it('should return correct tree object that represents not root component', () => {
+  it('should return correct tree object for not root component', () => {
     expect(fromFlatToTree(NFS_MW_CITY_DISTRICTS, NFS_MW_CITY_DISTRICTS[1])).toEqual(NFS_MW_CITY_DISTRICTS_TREE.children[0]);
   });
 
